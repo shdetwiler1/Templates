@@ -36,7 +36,7 @@
       "metadata": {
         "description": "Restricts choices to where premium storage is located in the US."
       }
-    }
+    },
     "windowsOSVersion": {
       "type": "string",
       "defaultValue": "2012-R2-Datacenter",
@@ -184,8 +184,10 @@
             "lun": 0,
             "vhd": {
               "Uri": "[variables('dataDisk1VHDName')]"
-            }
-          ]
+            },
+            "createOption": "Empty"
+          }
+          ] 
         },
         "networkProfile": {
           "networkInterfaces": [
